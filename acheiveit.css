@@ -77,34 +77,23 @@ font-weight: 700; /* Bold weight for headers */
         font-size: 16px; /* Slightly smaller font on mobile */
     }
 }
-/* Overall Stats Section */
-.stats-section {
-background: linear-gradient(135deg, #3b5998, #192f6a); /* Gradient background */
-padding: 30px;
-border-radius: 20px; /* Smoother rounded corners */
-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft shadow */
-position: relative;
-overflow: hidden;
-transition: all 0.3s ease;
+/* Image Wrapper for Circular Image */
+.image-wrapper {
+    width: 100px; /* Set a fixed width for the circle */
+    height: 100px; /* Set a fixed height for the circle */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide overflow */
+    display: flex; /* Use flexbox to center the image */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 0 auto; /* Center the wrapper */
 }
 
-.stats-section:hover {
-transform: translateY(-5px); /* Lift effect on hover */
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* Enhance shadow on hover */
-}
-
-/* Achieveit Image */
-.acheiveit-image {
-width: 120px; /* Larger image size */
-height: auto;
-border-radius: 50%; /* Circular image */
-border: 4px solid rgba(255, 255, 255, 0.8); /* White border */
-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Deep shadow for the image */
-transition: transform 0.3s ease;
-}
-
-.acheiveit-image:hover {
-transform: scale(1.1); /* Slight zoom on hover */
+/* AchieveIt Image Styling */
+.achieveit-image {
+    width: 100%; /* Ensure the image takes the full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the circle without distortion */
 }
 
 /* Title Styling */
@@ -168,10 +157,6 @@ transform: scale(1.1); /* Slight zoom on hover */
     }
 }
 
-.stats-section:hover {
-transform: translateY(-5px); /* Lift effect on hover */
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* Enhance shadow on hover */
-}
 
 
 
