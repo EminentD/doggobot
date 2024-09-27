@@ -108,57 +108,72 @@ transform: scale(1.1); /* Slight zoom on hover */
 }
 
 /* Title Styling */
-.acheiveit-title {
-font-family: 'Raleway', sans-serif; /* Elegant title font */
-font-size: 42px; /* Larger title */
-color: #fff; /* White text */
-text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Text shadow for effect */
-margin-top: 15px;
-font-weight: 700;
-letter-spacing: 2px;
-animation: fadeIn 1s ease-in-out; /* Animation for title */
+.achieveit-title {
+    font-family: 'Raleway', sans-serif; /* Elegant title font */
+    font-size: 42px; /* Larger title */
+    color: #fff; /* White text */
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Text shadow for effect */
+    margin-top: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out; /* Animation for title */
+}
+
+/* Stats Section Centering */
+.stats-section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
 }
 
 /* Smaller Stats Boxes */
 .stat-box {
-text-align: center;
-background: rgba(255, 255, 255, 0.1); /* Transparent white for stat boxes */
-padding: 8px; /* Reduced padding */
-border-radius: 8px; /* Smaller rounded corners */
-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Smaller shadow */
-transition: background 0.3s ease;
-color: #fff;
-font-size: 12px; /* Smaller text */
-width: 80px; /* Set a smaller width */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white for stat boxes */
+    padding: 12px; /* Increased padding for better spacing */
+    border-radius: 8px; /* Smaller rounded corners */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+    transition: background 0.3s ease;
+    color: #fff;
+    font-size: 14px; /* Adjusted font size */
+    width: 100px; /* Set a slightly larger width for better spacing */
+    margin: 0 10px; /* Add some horizontal spacing between boxes */
 }
 
 /* Smaller Font for Label and Strong Text */
 .stat-box span {
-font-size: 12px; /* Smaller label text */
-display: block;
-color: #f0f0f0;
-opacity: 0.8;
+    font-size: 14px; /* Adjusted label text size */
+    display: block;
+    color: #f0f0f0;
+    opacity: 0.8;
 }
 
 .stat-box strong {
-font-size: 16px; /* Smaller strong text */
-color: #fff;
-display: block;
-margin-top: 4px; /* Reduce margin for tighter layout */
-font-weight: 600;
+    font-size: 18px; /* Adjusted strong text size */
+    color: #fff;
+    display: block;
+    margin-top: 4px; /* Reduce margin for tighter layout */
+    font-weight: 600;
 }
 
 /* Keyframes for animations */
 @keyframes fadeIn {
-0% {
-    opacity: 0;
-    transform: translateY(20px);
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-100% {
-    opacity: 1;
-    transform: translateY(0);
+
+.stats-section:hover {
+transform: translateY(-5px); /* Lift effect on hover */
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* Enhance shadow on hover */
 }
-}
+
+
 
 /* Overall Tasks Section */
 .tasks {
