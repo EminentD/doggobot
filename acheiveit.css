@@ -77,86 +77,132 @@ font-weight: 700; /* Bold weight for headers */
         font-size: 16px; /* Slightly smaller font on mobile */
     }
 }
+/* Enhanced background for the stats section */
+.stats-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #ff758c, #161338); /* Vibrant gradient background */
+    background-size: 400% 400%; /* Animate gradient */
+    animation: backgroundMove 8s ease infinite; /* Infinite animation for dynamic background */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Slightly increased shadow for depth */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated gradient background movement */
+@keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Circular decorative element for background */
+.stats-section:before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0; /* Push behind the content */
+}
+
+.stats-section:after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+}
+
 /* Image Wrapper for Circular Image */
 .image-wrapper {
-    width: 100px; /* Set a fixed width for the circle */
-    height: 100px; /* Set a fixed height for the circle */
-    border-radius: 50%; /* Make it circular */
-    overflow: hidden; /* Hide overflow */
-    display: flex; /* Use flexbox to center the image */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    margin: 0 auto; /* Center the wrapper */
+    width: 120px; /* Slightly larger width */
+    height: 120px; /* Slightly larger height */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow around the image */
+    position: relative;
+    z-index: 1; /* Ensure it's above the background elements */
 }
 
 /* AchieveIt Image Styling */
 .achieveit-image {
-    width: 100%; /* Ensure the image takes the full width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the circle without distortion */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Title Styling */
 .achieveit-title {
-    font-family: 'Raleway', sans-serif; /* Elegant title font */
-    font-size: 42px; /* Larger title */
-    color: #fff; /* White text */
-    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Text shadow for effect */
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px; /* Slightly larger for emphasis */
+    color: #fff;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
     margin-top: 15px;
     font-weight: 700;
     letter-spacing: 2px;
-    animation: fadeIn 1s ease-in-out; /* Animation for title */
+    z-index: 1;
+    animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Stats Section Centering */
-.stats-section {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements horizontally */
-}
-
-/* Smaller Stats Boxes */
+/* Stats Box Styling */
 .stat-box {
     text-align: center;
-    background: rgba(255, 255, 255, 0.1); /* Transparent white for stat boxes */
-    padding: 12px; /* Increased padding for better spacing */
-    border-radius: 8px; /* Smaller rounded corners */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
-    transition: background 0.3s ease;
+    background: rgba(255, 255, 255, 0.15); /* Slightly less transparent for better contrast */
+    padding: 15px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Slightly larger rounded corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: transform 0.3s ease, background 0.3s ease;
     color: #fff;
-    font-size: 14px; /* Adjusted font size */
-    width: 100px; /* Set a slightly larger width for better spacing */
-    margin: 0 10px; /* Add some horizontal spacing between boxes */
+    font-size: 14px;
+    width: 110px; /* Slightly larger width */
+    margin: 0 15px; /* Increased margin between boxes */
+    z-index: 1;
 }
 
-/* Smaller Font for Label and Strong Text */
+.stat-box:hover {
+    transform: translateY(-10px); /* Smooth hover effect */
+    background: rgba(255, 255, 255, 0.3); /* Change background on hover */
+}
+
+/* Stat box text styling */
 .stat-box span {
-    font-size: 14px; /* Adjusted label text size */
+    font-size: 14px;
     display: block;
     color: #f0f0f0;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .stat-box strong {
-    font-size: 18px; /* Adjusted strong text size */
+    font-size: 18px;
     color: #fff;
     display: block;
-    margin-top: 4px; /* Reduce margin for tighter layout */
-    font-weight: 600;
+    margin-top: 6px;
+    font-weight: 700;
 }
 
-/* Keyframes for animations */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stat-box {
+        width: 100px;
+        margin: 10px 0; /* Vertical margin for smaller screens */
     }
 }
-
 
 
 
