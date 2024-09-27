@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invite Frens - Doggobot</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Poppins:wght@600&family=Montserrat:wght@500&family=Roboto:wght@400&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="acheiveit.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f9fb;
+      color: #343a40;
+    }
+    .invite-section {
+      position: relative;
+      text-align: center;
+      margin-top: 50px;
+      padding: 50px;
+      background-color: #f0f4f8;
+    }
+
+    .invite-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    /* Main Image Styling */
+.main-image {
+    width: 120px; /* Set desired width */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    z-index: 2;
+    margin: 0 auto; /* Center the image */
+}
+
+
+    .faded-images {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      opacity: 0.4;
+      z-index: 1;
+    }
+
+    .faded-images img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      filter: blur(5px);
+    }
+
+    .invite-button {
+      margin-top: 20px;
+    }
+
+    .instructions {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Invite Section -->
+  <div class="invite-section">
+    <h2>Invite Frens and get more Doggo!</h2>
+
+    <!-- Background faded images -->
+    <div class="faded-images">
+      <img src="doggo.jpg" alt="Friend Image">
+      <img src="doggo.jpg" alt="Friend Image">
+      <img src="doggo.jpg" alt="Friend Image">
+      <img src="doggo.jpg" alt="Friend Image">
+    </div>
+
+    <!-- Main centered image -->
+    <div class="main-image">
+      <img src="doggo.jpg" alt="Main Invite Image" class="img-fluid" style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%;">
+    </div>
+
+    <!-- Invite Button -->
+    <button class="btn btn-primary invite-button">Invite Frens</button>
+
+    <!-- Instructions -->
+    <p class="instructions">Tap the button to invite frens and grow your Doggo points!</p>
+  </div>
+
+
+    <!-- Bottom Navigation Bar -->
+    <!-- Bottom Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+        <div class="container-fluid justify-content-around">
+            <a class="nav-link text-center" href="index.html">
+                <i class="bi bi-house-door-fill"></i>
+                <div>Home</div>
+            </a>
+            <a class="nav-link text-center" href="leaderboard.html">
+                <i class="bi bi-trophy-fill"></i>
+                <div>Leaderboard</div>
+            </a>
+            <a class="nav-link text-center" href="frens.html">
+                <i class="bi bi-people-fill"></i>
+                <div>Friends</div>
+            </a>
+            <a class="nav-link text-center" href="wallet.html">
+                <i class="bi bi-wallet2"></i>
+                <div>Wallet</div>
+            </a>                              
+        </div>
+    </nav>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

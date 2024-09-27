@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doggobot Leaderboard</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Poppins:wght@600&family=Montserrat:wght@500&family=Roboto:wght@400&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="acheiveit.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f9fb;
+      color: #343a40;
+    }
+
+    .avatar-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    .award, .rank {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .holders-count, .top-ten {
+        font-weight: bold;
+    }
+    .nav-link.active {
+      color: #007bff !important;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+    
+
+    <!-- Header -->
+    <header class="header d-flex justify-content-between align-items-center p-3">
+        <h1 class="leaderboard-title">Wall Of Fame</h1>
+    </header>
+    <div class="container mt-4">
+        <!-- Leaderboard Card -->
+        <div class="card leaderboard-card p-3 mb-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Left section with Avatar and Name -->
+                <div class="d-flex align-items-center">
+                    <!-- Avatar -->
+                    <div class="avatar-circle text-center fw-bold me-3" style="background-color: #f5c71a; color: white; width: 40px; height: 40px; border-radius: 50%;">O</div>
+                    <!-- Name and Doggo Points -->
+                    <div>
+                        <h5 class="mb-0">Opeyemi</h5>
+                        <span class="doggo-points">3000 Doggo</span>
+                    </div>
+                </div>
+                <!-- Rank on the Right -->
+                <span class="rank text-end fw-bold">#348888777</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Section -->
+<div class="container mt-4">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <!-- Left: Number of Holders -->
+        <h5 class="holders-count">30,666,333 holders</h5>
+        <!-- Right: Top 10 -->
+        <span class="top-ten">Top 10 (10)</span>
+    </div>
+
+    <!-- List of People according to ranks -->
+    <ul class="list-group">
+        <!-- Example 1: Rank 1 with Gold Medal -->
+        <li class="list-group-item d-flex align-items-center justify-content-between">
+            <!-- Avatar and Name -->
+            <div class="d-flex align-items-center">
+                <div class="avatar-circle text-center fw-bold me-3" style="background-color: #f5c71a; color: white; width: 40px; height: 40px; border-radius: 50%;">L</div>
+                <div>
+                    <h6 class="mb-0">Lugard Dupe</h6>
+                    <span class="doggo-points">3000 Doggo</span>
+                </div>
+            </div>
+            <!-- Right: Gold Medal -->
+            <span class="award">🥇</span>
+        </li>
+
+        <!-- Example 2: Rank 2 with Silver Medal -->
+        <li class="list-group-item d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <div class="avatar-circle text-center fw-bold me-3" style="background-color: #c0c0c0; color: white; width: 40px; height: 40px; border-radius: 50%;">M</div>
+                <div>
+                    <h6 class="mb-0">Miley John</h6>
+                    <span class="doggo-points">2900 Doggo</span>
+                </div>
+            </div>
+            <span class="award">🥈</span>
+        </li>
+
+        <!-- Example 3: Rank 3 with Bronze Medal -->
+        <li class="list-group-item d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <div class="avatar-circle text-center fw-bold me-3" style="background-color: #cd7f32; color: white; width: 40px; height: 40px; border-radius: 50%;">A</div>
+                <div>
+                    <h6 class="mb-0">Alice Brown</h6>
+                    <span class="doggo-points">2800 Doggo</span>
+                </div>
+            </div>
+            <span class="award">🥉</span>
+        </li>
+
+        <!-- Example 4: Rank 4 and onward with numbers -->
+        <li class="list-group-item d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <div class="avatar-circle text-center fw-bold me-3" style="background-color: #bbb; color: white; width: 40px; height: 40px; border-radius: 50%;">D</div>
+                <div>
+                    <h6 class="mb-0">David Miller</h6>
+                    <span class="doggo-points">2700 Doggo</span>
+                </div>
+            </div>
+            <span class="rank">#4</span>
+        </li>
+
+        <!-- Example 5: Rank 5 -->
+        <li class="list-group-item d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <div class="avatar-circle text-center fw-bold me-3" style="background-color: #bbb; color: white; width: 40px; height: 40px; border-radius: 50%;">E</div>
+                <div>
+                    <h6 class="mb-0">Emily Johnson</h6>
+                    <span class="doggo-points">2600 Doggo</span>
+                </div>
+            </div>
+            <span class="rank">#5</span>
+        </li>
+    </ul>
+</div>
+
+
+   
+    <!-- Bottom Navigation Bar -->
+    <!-- Bottom Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+        <div class="container-fluid justify-content-around">
+            <a class="nav-link text-center" href="index.html">
+                <i class="bi bi-house-door-fill"></i>
+                <div>Home</div>
+            </a>
+            <a class="nav-link text-center" href="leaderboard.html">
+                <i class="bi bi-trophy-fill"></i>
+                <div>Leaderboard</div>
+            </a>
+            <a class="nav-link text-center" href="frens.html">
+                <i class="bi bi-people-fill"></i>
+                <div>Friends</div>
+            </a>
+            <a class="nav-link text-center" href="wallet.html">
+                <i class="bi bi-wallet2"></i>
+                <div>Wallet</div>
+            </a>                              
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
