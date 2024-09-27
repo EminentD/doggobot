@@ -18,7 +18,7 @@
 
     <!-- Preloader Section -->
     <div id="preloader">
-        <img src="alcheive.png" alt="Loading Image" class="preloader-image">
+        <img src="doggo.jpg" alt="Loading Image" class="preloader-image">
         <h2 class="preloader-text">Amazing...</h2>
     </div>
 
@@ -34,14 +34,14 @@
 
         <!-- Welcome Section -->
         <div class="container">
-            <h1>Welcome to AchieveIt</h1>
+            <h1>Welcome to Doggobot</h1>
         </div>
 
         <!-- Stats Section -->
         <div class="container">
             <div class="stats-section text-center mt-4">
-                <img src="alcheive.png" alt="AchieveIt Image" class="achieveit-image mb-3">
-                <h1 class="achieveit-title">6,797 AchieveIt</h1>
+                <img src="doggo.jpg" alt="AchieveIt Image" class="achieveit-image mb-3">
+                <h1 class="achieveit-title">6,797 Doggobot</h1>
                 <div class="d-flex justify-content-around mt-3">
                     <div class="stat-box">
                         <span>Rewards</span><br>
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        
+      
         <!-- Tasks Section -->
         <div class="container mt-4">
             <div class="tasks mt-5">
@@ -246,23 +246,7 @@
             }
         }
 
-        // Launch task functionality
-        document.getElementById("launch-btn").addEventListener("click", async () => {
-            const chatId = document.getElementById("chat-id").value;
-            const responseDiv = document.getElementById("response");
-
-            // Make a POST request to the Python backend
-            const response = await fetch('https://achieve-it.herokuapp.com/start', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ chat_id: chatId })  // Ensure the key matches the Flask route
-            });
-
-            const data = await response.json();
-            responseDiv.innerText = data.message || data.error; // Display the response
-        });
+        
 
     </script>
 </body>
